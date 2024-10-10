@@ -1,0 +1,14 @@
+<Project>
+  <Target Name="Build">
+    <Exec Command="dotnet build Lab1/Lab1.csproj" />
+    <Exec Command="dotnet build Lab1.Tests/Lab1.Tests.csproj" />
+  </Target>
+
+  <Target Name="Run">
+    <Exec Command="dotnet run --project Lab1/Lab1.csproj" />
+  </Target>
+
+  <Target Name="Test">
+    <Exec Command="dotnet test Lab1.Tests/Lab1.Tests.csproj" />
+  </Target>
+</Project>
