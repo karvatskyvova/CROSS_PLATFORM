@@ -1,14 +1,13 @@
 <Project>
   <Target Name="Build">
-    <Exec Command="dotnet build Lab1/Lab1.csproj" />
-    <Exec Command="dotnet build Lab1.Tests/Lab1.Tests.csproj" />
+    <Exec Command="dotnet build $(Solution)/$(Solution).csproj" />
   </Target>
 
   <Target Name="Run">
-    <Exec Command="dotnet run --project Lab1/Lab1.csproj" />
+    <Exec Command="dotnet run --project $(Solution)/$(Solution).csproj" />
   </Target>
 
   <Target Name="Test">
-    <Exec Command="dotnet test Lab1.Tests/Lab1.Tests.csproj" />
+    <Exec Command="dotnet test $(Solution).Tests/$(Solution).Tests.csproj" />
   </Target>
 </Project>

@@ -1,74 +1,24 @@
-# Build Folders
+# .NET
 bin/
 obj/
-[Oo]bj/
-[Bb]in/
-
-# User-specific files
 *.user
+*.rsuser
 *.suo
 *.userprefs
-
-# Rider files
-.idea/
-*.sln.iml
-
-# Visual Studio Code files
-.vscode/
-
-# Visual Studio files
-.vs/
-*.dbmdl
-*.dbproj.schemaview
-*.jfm
-*.sln.docstates
-
-# .NET Core files
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# Package files
-*.nupkg
-*.snupkg
-*.symbols.nupkg
-
-# Test Results
-TestResults/
-*.trx
-
-# Coverage results
-*.coverage
-*.coveragexml
-
-# Publish folder
-publish/
 
 # Logs
 *.log
 
-# Other
-*.dll
-*.exe
-*.pdb
-*.cache
-*.vsp
-*.vspx
-*.vssscc
-*.vsscc
-*.vspscc
-
-# NuGet packages
-*.nupkg
-packages/
-
-# ReSharper
-*.DotSettings.user
-.idea/
-*.ReSharper*/
-
 # Temporary files
 *.tmp
 *.temp
-*.bak
-*.swp
+
+# IDE files
+.vscode/
+.idea/
+
+# Build artifacts
+Lab1/INPUT.TXT
+Lab1/OUTPUT.TXT
+Lab2/INPUT.TXT
+Lab2/OUTPUT.TXT
