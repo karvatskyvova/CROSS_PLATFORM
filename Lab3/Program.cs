@@ -32,7 +32,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-        var input = File.ReadAllLines("Lab3//INPUT.TXT");
+        var input = File.ReadAllLines("D:\\CROSS_PLATFORM\\Lab3\\input.txt");
         var firstLine = input[0].Split();
         int n = int.Parse(firstLine[0]);
         int m = int.Parse(firstLine[1]);
