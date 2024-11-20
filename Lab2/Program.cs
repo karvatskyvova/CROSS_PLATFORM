@@ -7,13 +7,13 @@ public class Program
 
     public static void Main(string[] args)
     {
-        if (!File.Exists("INPUT.TXT"))
+        if (!File.Exists("D:\\CROSS_PLATFORM\\Lab2\\input.txt"))
         {
             Console.WriteLine("Помилка: файл INPUT.TXT не знайдено.");
             return;
         }
 
-        string[] input = File.ReadAllLines("INPUT.TXT");
+        string[] input = File.ReadAllLines("D:\\CROSS_PLATFORM\\Lab2\\input.txt");
         rules = input[..6];  
 
         string[] command = input[6].Split();

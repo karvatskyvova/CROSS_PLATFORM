@@ -32,7 +32,22 @@ public class Program
 
     public static void Main(string[] args)
     {
-        var input = File.ReadAllLines("D:\\CROSS_PLATFORM\\Lab3\\input.txt");
+        string inputPath = "D:\\CROSS_PLATFORM\\Lab3\\input.txt"; 
+
+        // Якщо аргумент передано, використовуємо його як шлях до файлу
+        if (args.Length > 0)
+        {
+            inputPath = args[0];
+        }
+
+        // Перевірка на існування файлу
+        if (!File.Exists(inputPath))
+        {
+            Console.WriteLine($"Файл {inputPath} не знайдено. Переконайтеся, що він знаходиться в тій самій директорії.");
+            Environment.Exit(1); // Вихід з помилкою
+        }
+
+        var input = File.ReadAllLines(inputPath);
         var firstLine = input[0].Split();
         int n = int.Parse(firstLine[0]);
         int m = int.Parse(firstLine[1]);
